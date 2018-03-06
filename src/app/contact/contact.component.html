@@ -1,0 +1,50 @@
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 offset-2 containBox">
+                <h2>Lämna dina synpunkter här!</h2>
+                <br>
+                <div>
+                    <div class="form-group">
+                        <label>Rubrik</label>
+                        <br>
+                        <input type="text" class="form-control" required>
+                    </div>
+            
+                    <form>
+                        <div class="form-group">
+                            <label for="beskrivning">Beskrivning</label>
+                            <textarea id="beskrivning" class="form-control" rows="3" required maxlength="100"></textarea>
+                            <small id="beskrivningInfo" class="form-text text-muted">Max 100 tecken</small>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label for="arende">Ärende</label>
+                            <select class="form-control" id="arende">
+                                <option value="Strand">Strand</option>
+                                <option value="Uthyrning">Uthyrning</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <h4>Vill du få svar på dina synpunkter?</h4>
+                            <label>Ja</label>
+                            <input type="radio" id="Ja" name="svar">
+                            <label>Nej</label>
+                            <input type="radio" id="Nej" name="svar" checked>
+                            <br>
+                            <label for="Mail">
+                                Email:
+                            </label>
+                            <input type="email" id="Mail" placeholder="namn@exempel.com" class="EMail form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="submit" value="Skicka" class="btn-primary btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
